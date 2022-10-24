@@ -17,7 +17,7 @@ permit = Permit(
 )
 
 
-AUTH0_DOMAIN = os.getenv("AUTH0_DOMAIN_NAME")
+AUTH0_DOMAIN = os.getenv("AUTH0_DOMAIN")
 ALGORITHMS = ['RS256']
 API_AUDIENCE = os.getenv("AUTH0_CLIENT_ID")
 

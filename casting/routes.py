@@ -10,7 +10,7 @@ bp = Blueprint('routes', __name__)
 
 @bp.route('/actors', methods=['GET'], endpoint='get_actors')
 @requires_auth('read', 'actors')
-def read_all_actors(jwt):
+def read_all_actors():
 
     # using the try-except method to create the query
     try:
